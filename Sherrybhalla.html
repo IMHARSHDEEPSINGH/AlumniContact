@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Dr. Sherry Bhalla | Research Journey</title>
+<title>Dr Sherry Bhalla | Alumni Journey</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
@@ -21,7 +22,7 @@ color:#333;
 overflow-x:hidden;
 }
 
-/* ===== DNA LOADER ===== */
+/* ===== LOADING SCREEN ===== */
 
 #loader{
 position:fixed;
@@ -34,14 +35,14 @@ display:flex;
 flex-direction:column;
 align-items:center;
 justify-content:center;
-z-index:9999;
 color:white;
+z-index:9999;
 }
 
 .dna-loader{
 display:flex;
 gap:6px;
-margin-bottom:20px;
+margin-bottom:15px;
 }
 
 .dna-loader span{
@@ -61,11 +62,6 @@ background:#81c784;
 50%{transform:scaleY(1.3)}
 }
 
-.loading-text{
-font-size:16px;
-letter-spacing:1px;
-}
-
 /* ===== DNA BACKGROUND ===== */
 
 .dna-bg{
@@ -75,7 +71,7 @@ left:0;
 width:100%;
 height:100%;
 z-index:-1;
-opacity:0.08;
+opacity:0.07;
 }
 
 /* ===== HEADER ===== */
@@ -91,32 +87,37 @@ header h1{
 margin:0;
 }
 
-/* ===== LAYOUT ===== */
+/* ===== MAIN LAYOUT ===== */
 
 .container{
-max-width:1200px;
+max-width:1100px;
 margin:auto;
 display:flex;
 gap:40px;
 padding:40px;
 }
 
+/* ===== PROFILE CARD ===== */
+
 .profile{
 width:280px;
 background:white;
 padding:25px;
-border-radius:12px;
-box-shadow:0 8px 20px rgba(0,0,0,0.08);
+border-radius:10px;
+box-shadow:0 6px 18px rgba(0,0,0,0.1);
 text-align:center;
 height:fit-content;
 }
 
 .profile img{
-width:160px;
-height:160px;
+width:150px;
+height:150px;
 border-radius:50%;
 object-fit:cover;
+margin-bottom:10px;
 }
+
+/* ===== CONTENT ===== */
 
 .content{
 flex:1;
@@ -125,51 +126,33 @@ flex:1;
 /* ===== SECTIONS ===== */
 
 .section{
-margin-bottom:50px;
+margin-bottom:40px;
 }
 
 .section h2{
-border-left:5px solid #2c5364;
+border-left:4px solid #2c5364;
 padding-left:10px;
+margin-bottom:10px;
 }
 
 /* ===== CARD ===== */
 
 .card{
 background:white;
-padding:22px;
-border-radius:10px;
-box-shadow:0 6px 18px rgba(0,0,0,0.08);
-margin-top:15px;
+padding:20px;
+border-radius:8px;
+box-shadow:0 4px 14px rgba(0,0,0,0.08);
 }
 
 /* ===== TIMELINE ===== */
 
 .timeline{
-position:relative;
-padding-left:30px;
-}
-
-.timeline::before{
-content:"";
-position:absolute;
-left:10px;
-top:0;
-bottom:0;
-width:3px;
-background:#2c5364;
+border-left:3px solid #2c5364;
+padding-left:20px;
 }
 
 .timeline-item{
-opacity:0;
-transform:translateY(40px);
-transition:all 0.7s ease;
-margin-bottom:25px;
-}
-
-.timeline-item.visible{
-opacity:1;
-transform:translateY(0);
+margin-bottom:18px;
 }
 
 /* ===== PIPELINE ===== */
@@ -177,31 +160,27 @@ transform:translateY(0);
 .pipeline{
 display:flex;
 flex-wrap:wrap;
-gap:15px;
+gap:10px;
 }
 
 .pipeline-box{
 background:#2c5364;
 color:white;
-padding:14px 18px;
-border-radius:8px;
-transition:0.3s;
+padding:10px 15px;
+border-radius:6px;
+font-size:14px;
 }
 
-.pipeline-box:hover{
-transform:scale(1.05);
-background:#1a3d4d;
-}
-
-/* ===== PUBLICATION CARDS ===== */
+/* ===== PUBLICATIONS ===== */
 
 .pub{
 cursor:pointer;
+margin-bottom:10px;
 }
 
 .pub-content{
 display:none;
-margin-top:10px;
+margin-top:8px;
 font-size:14px;
 }
 
@@ -214,7 +193,7 @@ display:block;
 .tags{
 display:flex;
 flex-wrap:wrap;
-gap:10px;
+gap:8px;
 }
 
 .tag{
@@ -239,11 +218,13 @@ width:100%;
 }
 
 </style>
+
 </head>
+
 
 <body>
 
-<!-- ===== LOADER ===== -->
+<!-- LOADER -->
 
 <div id="loader">
 
@@ -252,41 +233,48 @@ width:100%;
 <span></span><span></span><span></span><span></span><span></span>
 </div>
 
-<p class="loading-text">Give me a moment...</p>
+<p>Loading Profile...</p>
 
 </div>
+
 
 <!-- DNA BACKGROUND -->
 
 <canvas class="dna-bg" id="dnaCanvas"></canvas>
 
+
 <header>
 
-<h1>Dr. Sherry Bhalla</h1>
+<h1>Dr Sherry Bhalla</h1>
 <p>Computational Biologist | Cancer Genomics | Bioinformatics</p>
 
 </header>
 
+
 <div class="container">
+
 
 <!-- PROFILE -->
 
 <div class="profile">
 
-<img src="images/sherry.jpg" alt="Profile Photo">
+<img src="pics/SharryBhalla.jpg">
 
 <h3>Scientist</h3>
 
 <p>
 CSIR – Institute of Genomics & Integrative Biology  
+<br>
 New Delhi, India
 </p>
 
 </div>
 
+
 <!-- CONTENT -->
 
 <div class="content">
+
 
 <div class="section">
 
@@ -294,11 +282,12 @@ New Delhi, India
 
 <div class="card">
 
-Dr. Sherry Bhalla is a computational biologist specializing in multi-omics integration, cancer genomics, and machine learning based biomarker discovery. Her work integrates genomic, transcriptomic, and proteomic datasets to uncover molecular signatures that support precision oncology.
+Dr Sherry Bhalla is a computational biologist specializing in multi-omics integration, cancer genomics, and machine learning based biomarker discovery. Her work focuses on identifying molecular signatures that improve cancer diagnosis and treatment strategies.
 
 </div>
 
 </div>
+
 
 <div class="section">
 
@@ -307,33 +296,29 @@ Dr. Sherry Bhalla is a computational biologist specializing in multi-omics integ
 <div class="card timeline">
 
 <div class="timeline-item">
-<b>Scientist</b> — CSIR-IGIB  
-<br>2023 – Present
+<b>Scientist</b> — CSIR-IGIB (2023–Present)
 </div>
 
 <div class="timeline-item">
-<b>Research Consultant</b> — Mount Sinai Health System  
-<br>2021 – 2023
+<b>Research Consultant</b> — Mount Sinai Health System (2021–2023)
 </div>
 
 <div class="timeline-item">
-<b>Postdoctoral Fellow</b> — Mount Sinai Health System  
-<br>2019 – 2021
+<b>Postdoctoral Research Fellow</b> — Mount Sinai Health System (2019–2021)
 </div>
 
 <div class="timeline-item">
-<b>ICMR SRF</b> — IIIT Delhi  
-<br>2017 – 2018
+<b>ICMR SRF</b> — IIIT Delhi (2017–2018)
 </div>
 
 <div class="timeline-item">
-<b>ICMR JRF</b> — IMTECH  
-<br>2014 – 2017
+<b>ICMR JRF</b> — Institute of Microbial Technology (2014–2017)
 </div>
 
 </div>
 
 </div>
+
 
 <div class="section">
 
@@ -343,7 +328,7 @@ Dr. Sherry Bhalla is a computational biologist specializing in multi-omics integ
 
 <div class="pipeline">
 
-<div class="pipeline-box">TCGA Data</div>
+<div class="pipeline-box">Genomic Data</div>
 <div class="pipeline-box">Multi-omics Integration</div>
 <div class="pipeline-box">Machine Learning</div>
 <div class="pipeline-box">Biomarker Discovery</div>
@@ -355,16 +340,17 @@ Dr. Sherry Bhalla is a computational biologist specializing in multi-omics integ
 
 </div>
 
+
 <div class="section">
 
-<h2>Publications & Tools</h2>
+<h2>Research Tools</h2>
 
 <div class="card pub">
 
 <b>CancerPDF Database</b>
 
 <div class="pub-content">
-A curated database of cancer-associated peptides identified in body fluids using proteomics techniques.
+Database of cancer-associated peptides detected in human body fluids using proteomics techniques.
 </div>
 
 </div>
@@ -374,7 +360,7 @@ A curated database of cancer-associated peptides identified in body fluids using
 <b>CancerTSP Tool</b>
 
 <div class="pub-content">
-Machine learning tool for predicting liver tissue cancer status using gene expression data.
+Machine learning model predicting liver cancer tissue status from gene expression data.
 </div>
 
 </div>
@@ -384,12 +370,13 @@ Machine learning tool for predicting liver tissue cancer status using gene expre
 <b>Multiple Myeloma Patient Similarity Network</b>
 
 <div class="pub-content">
-Multi-omics network integrating mutation, gene expression and copy number variation data.
+Multi-omics patient similarity network integrating mutation, gene expression and CNV data.
 </div>
 
 </div>
 
 </div>
+
 
 <div class="section">
 
@@ -407,6 +394,7 @@ Multi-omics network integrating mutation, gene expression and copy number variat
 
 </div>
 
+
 </div>
 
 </div>
@@ -414,55 +402,19 @@ Multi-omics network integrating mutation, gene expression and copy number variat
 
 <script>
 
-/* ===== LOADER FADE ===== */
+/* Loader */
 
 window.addEventListener("load",function(){
-
-setTimeout(function(){
-
-document.getElementById("loader").style.display="none";
-
-},1200);
-
+setTimeout(()=>{document.getElementById("loader").style.display="none"},1000);
 });
 
-/* ===== TIMELINE SCROLL ===== */
-
-const items=document.querySelectorAll(".timeline-item");
-
-function reveal(){
-
-items.forEach(item=>{
-
-const pos=item.getBoundingClientRect().top;
-
-if(pos<window.innerHeight-80){
-
-item.classList.add("visible");
-
-}
-
-});
-
-}
-
-window.addEventListener("scroll",reveal);
-
-
-/* ===== PUBLICATION CARDS ===== */
+/* Publication Toggle */
 
 document.querySelectorAll(".pub").forEach(card=>{
-
-card.onclick=()=>{
-
-card.classList.toggle("open");
-
-}
-
+card.onclick=()=>card.classList.toggle("open")
 });
 
-
-/* ===== DNA BACKGROUND ANIMATION ===== */
+/* DNA Background */
 
 const canvas=document.getElementById("dnaCanvas");
 const ctx=canvas.getContext("2d");
@@ -497,6 +449,7 @@ requestAnimationFrame(draw);
 draw();
 
 </script>
+
 
 </body>
 </html>
