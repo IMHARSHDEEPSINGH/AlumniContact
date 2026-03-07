@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,6 +31,12 @@ padding:60px 20px;
 
 header h1{
 margin:0;
+font-size:36px;
+}
+
+header p{
+margin-top:8px;
+opacity:0.9;
 }
 
 /* LAYOUT */
@@ -60,6 +67,7 @@ height:150px;
 border-radius:50%;
 object-fit:cover;
 margin-bottom:10px;
+border:4px solid #2c5364;
 }
 
 /* CONTENT */
@@ -87,6 +95,12 @@ background:white;
 padding:20px;
 border-radius:8px;
 box-shadow:0 4px 14px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-4px);
+box-shadow:0 10px 24px rgba(0,0,0,0.12);
 }
 
 /* TIMELINE */
@@ -98,6 +112,18 @@ padding-left:20px;
 
 .timeline-item{
 margin-bottom:18px;
+position:relative;
+}
+
+.timeline-item::before{
+content:'';
+position:absolute;
+left:-28px;
+top:5px;
+width:10px;
+height:10px;
+background:#2c5364;
+border-radius:50%;
 }
 
 /* TAGS */
@@ -129,6 +155,12 @@ width:100%;
 
 }
 
+footer{
+text-align:center;
+padding:20px;
+color:#777;
+}
+
 </style>
 
 </head>
@@ -139,7 +171,8 @@ width:100%;
 <header>
 
 <h1>Aprajita Gupta</h1>
-<p>Early Career Researcher | Systems Biology | Bioinformatics | Population Genomics</p>
+<p>Senior Analyst | Ph.D. | Regulatory Affairs</p>
+<p>Chandigarh, India</p>
 
 </header>
 
@@ -150,15 +183,17 @@ width:100%;
 
 <div class="profile">
 
-<img src="pics/AprajitaGupta.jpg">
+<img src="pics/AprajitaGupta2.jpg" alt="Aprajita Gupta">
 
-<h3>Project Associate-I</h3>
+<h3>Senior Analyst</h3>
 
 <p>
-LaCONES Hyderabad  
+Inizio
 <br>
-India
+Chandigarh, India
 </p>
+
+<p>500+ Connections</p>
 
 </div>
 
@@ -173,7 +208,11 @@ India
 
 <div class="card">
 
-Aprajita Gupta is an early career researcher working in systems biology and bioinformatics. Her work focuses on population genomics, molecular biology techniques, and bioinformatics-based data analysis. She has gained practical laboratory and computational experience through research internships and projects involving genomic data analysis and molecular experimentation.
+Medical Writer involved in EU MDR-based regulatory writing for medical devices (Class I to Class III), primarily developing Clinical Evaluation Plans (CEPs), Clinical Evaluation Reports (CERs), literature reports, and documentation supporting clinical evaluations.
+
+Experienced in conducting literature searches, performing data analysis, documenting results, producing technical reports, and presenting findings to academic and industry collaborators.
+
+Skilled in laboratory techniques including Real-Time PCR, Western Blotting, Molecular Biology, ELISA, Animal Handling, and Bioinformatics analysis.
 
 </div>
 
@@ -187,19 +226,9 @@ Aprajita Gupta is an early career researcher working in systems biology and bioi
 <div class="card timeline">
 
 <div class="timeline-item">
-<b>Project Associate-I</b> — LaCONES Hyderabad (2025–Present)
-</div>
-
-<div class="timeline-item">
-<b>Internship Trainee</b> — DRDO (2024)
-</div>
-
-<div class="timeline-item">
-<b>Online Training Program</b> — GNT Smorgasbord 3 (2023)
-</div>
-
-<div class="timeline-item">
-<b>Healthcare Intern</b> — Indus Super Specialty Hospital (2022)
+<b>Senior Analyst – Regulatory Affairs</b> — Inizio
+<br>
+Chandigarh, India
 </div>
 
 </div>
@@ -209,23 +238,27 @@ Aprajita Gupta is an early career researcher working in systems biology and bioi
 
 <div class="section">
 
-<h2>Research & Laboratory Experience</h2>
+<h2>Laboratory & Technical Skills</h2>
 
 <div class="card">
 
 <ul>
 
-<li>DNA isolation from environmental soil samples.</li>
+<li>Real-Time PCR</li>
 
-<li>Protein isolation and estimation.</li>
+<li>Western Blotting</li>
 
-<li>Bacterial cell culture techniques.</li>
+<li>ELISA</li>
 
-<li>SDS-PAGE and agarose gel electrophoresis.</li>
+<li>Molecular Biology Techniques</li>
 
-<li>PCR and molecular biology techniques.</li>
+<li>Animal Handling</li>
 
-<li>Bioinformatics data analysis and genomic data interpretation.</li>
+<li>Bioinformatics Analysis</li>
+
+<li>Literature Search & Data Analysis</li>
+
+<li>Regulatory Writing for Medical Devices</li>
 
 </ul>
 
@@ -240,15 +273,21 @@ Aprajita Gupta is an early career researcher working in systems biology and bioi
 
 <div class="card">
 
-<b>Master's Degree – Systems Biology & Bioinformatics</b>  
+<b>Doctor of Philosophy (Ph.D.) – Systems Biology and Bioinformatics</b>
 <br>
-Panjab University (2022–2024)
+Panjab University (2013 – 2020)
 
 <br><br>
 
-<b>Bachelor's Degree – Bioinformatics</b>  
+<b>M.Sc – Systems Biology and Bioinformatics</b>
 <br>
-Panjab University (2017–2020)
+Panjab University (2010 – 2012)
+
+<br><br>
+
+<b>B.Sc (Hons.) – Bioinformatics</b>
+<br>
+Panjab University (2007 – 2010)
 
 </div>
 
@@ -257,21 +296,19 @@ Panjab University (2017–2020)
 
 <div class="section">
 
-<h2>Skills</h2>
+<h2>Professional Skills</h2>
 
 <div class="card tags">
 
+<div class="tag">Regulatory Writing</div>
+<div class="tag">Clinical Evaluation Reports</div>
+<div class="tag">EU MDR</div>
+<div class="tag">Real-Time PCR</div>
+<div class="tag">Western Blotting</div>
+<div class="tag">ELISA</div>
 <div class="tag">Bioinformatics</div>
-
-<div class="tag">Population Genomics</div>
-
-<div class="tag">Artificial Intelligence</div>
-
-<div class="tag">PCR</div>
-
-<div class="tag">Gel Electrophoresis</div>
-
-<div class="tag">Data Analysis</div>
+<div class="tag">Molecular Biology</div>
+<div class="tag">Literature Analysis</div>
 
 </div>
 
@@ -281,6 +318,14 @@ Panjab University (2017–2020)
 </div>
 
 </div>
+
+
+<footer>
+
+© 2025 Alumni Profile | Panjab University
+
+</footer>
 
 </body>
 </html>
+```
